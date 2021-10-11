@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+  <head>
+   
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <title>Mid exam</title>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Student Management App</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav ">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="mid.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li> 
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <h1>
+          Student Management <br>App<br><hr>
+      </h1>
+      <label>Faculty</label><br>
+      <div>
+          <select >
+        <option selected>----------Pilih----------</option>
+        <option value="Pascarjana">Pascarjana</option>
+        <option value="Fakultas Filsafat">Fakultas Filsafat</option>
+        <option value="Fakultas Keguruan dan Ilmu Pendidikan">Fakultas Keguruan dan Ilmu Pendidikan</option>
+        <option value="Fakultas Ekonomi dan Bisnis">Fakultas Ekonomi dan Bisnis</option>
+        <option value="Fakultas Pertanian">Fakultas Pertanian</option>
+        <option value="Fakultas Ilmmu Komputer">Fakultas Ilmu Komputer</option>
+        <option value="Fakultas Keperawatan">Fakultas Keperawatan</option>
+        <option value="Akademi Sekretari">Akademi Sekretari</option>
+          </select>
+          <br><button class="btn btn-primary" type="submit">Show Students</button>
+      </div><br>
+      <label>Program of Study</label><br>
+      <div>
+          <select>
+            <option selected>----------Pilih----------</option>
+            <option value="Magister Manajemen">Magister Manajemen</option>
+            <option value="Magister Teologi">Magister Teologi</option>
+            <option value="Ilmu Filsafat">Ilmu Filsafat</option>
+            <option value="Pendidikan Agama">Pendidikan Agama</option>
+            <option value="Pendidikan Bahasa Inggris">Pendidikan Bahasa Inggris</option>
+            <option value="Pendidikan Ekonomi">Pendidikan Ekonomi</option>
+            <option value="Pendidikan Luar Sekolah">Pendidikan Luar Sekolah</option>
+            <option value="Akuntansi">Akuntansi</option>
+            <option value="Manajemen">Manajemen</option>
+            <option value="Agroteknologi">Agroteknologi</option>
+            <option value="Informatika">Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Profesi Nurs">Profesi Nurs</option>
+            <option value="Keperawatan">Keperawatan</option>
+            <option value="Sekretari">Sekretari (D3) </option>
+          </select>
+          <br><button class="btn btn-primary" type="submit">Show Students</button>
+      </div><br>
+
+      <h3>Add Student</h3>
+      <button class="btn btn-primary" onclick="fungsiSaya()" type="submit">Show/Hide</button>
+<div id="target">
+  student ID<br>
+  <input type="ID" id="NIM" class="form" name="Studeent-NIM" placeholder="11223344"><br>
+  Full Name<br>
+  <input type="ID" class="form" id="Name" name="Full-Name" placeholder="Janecha Umbase"><br>
+  Gender<br>
+  <input type="radio" id="Male" name="fav_language" value="Male">
+  <label for="html">Male</label><br>
+    <input type="radio" id="Female" name="fav_language" value="Female">
+    <label for="html">Female</label><br><br>
+    <label>Faculty</label><br>
+    <select name="faculty" id="Menu_faculty" >
+        <option selected>--Pilih--</option>
+        <option value="Pascarjana">Pascarjana</option>
+        <option value="Fakultas Filsafat">Fakultas Filsafat</option>
+        <option value="Fakultas Keguruan dan Ilmu Pendidikan">Fakultas Keguruan dan Ilmu Pendidikan</option>
+        <option value="Fakultas Ekonomi dan Bisnis">Fakultas Ekonomi dan Bisnis</option>
+        <option value="Fakultas Pertanian">Fakultas Pertanian</option>
+        <option value="Fakultas Ilmmu Komputer">Fakultas Ilmu Komputer</option>
+        <option value="Fakultas Keperawatan">Fakultas Keperawatan</option>
+        <option value="Akademi Sekretari">Akademi Sekretari</option>
+     </select><br>
+     <div>
+        <label>Program of Study</label><br>
+        <select name="faculty2" id="Menu_faculty2" >
+            <option selected>----------Pilih----------</option>
+            <option value="Magister Manajemen">Magister Manajemen</option>
+            <option value="Magister Teologi">Magister Teologi</option>
+            <option value="Ilmu Filsafat">Ilmu Filsafat</option>
+            <option value="Pendidikan Agama">Pendidikan Agama</option>
+            <option value="Pendidikan Bahasa Inggris">Pendidikan Bahasa Inggris</option>
+            <option value="Pendidikan Ekonomi">Pendidikan Ekonomi</option>
+            <option value="Pendidikan Luar Sekolah">Pendidikan Luar Sekolah</option>
+            <option value="Akuntansi">Akuntansi</option>
+            <option value="Manajemen">Manajemen</option>
+            <option value="Agroteknologi">Agroteknologi</option>
+            <option value="Informatika">Informatika</option>
+            <option value="Sistem Informasi">Sistem Informasi</option>
+            <option value="Profesi Nurs">Profesi Nurs</option>
+            <option value="Keperawatan">Keperawatan</option>
+            <option value="Sekretari">Sekretari (D3) </option>
+            
+         </select><br>
+    </div><input class="btn btn-primary" type="submit" value="Submit">
+</div>
+<hr>
+<div></div>
+<h1 class="text-center">Our Students</h1>
+<tr><input type="text" class="align-center"></tr>
+
+</style>
+      <table class="table table-striped " >
+        <tr>
+            <td>Student ID(NIM)</td>
+            <td>Full Name</td>
+            <td>Gender</td>
+            <td>Faculty</td>
+            <td>Program of Study</td>
+            <td>Action</td>
+        </tr>
+        <tr>
+            <td>105011810001</td>
+            <td>Jhon Doe</td>
+            <td>Male</td>
+            <td>FIK</td>
+            <td>Sistem Informasi
+            <td><a href="#" class="link-danger"><i class="bi bi-person-dash-fill"></i></a></td>
+        </tr>
+        <tr>
+            <td>103021810001</td>
+            <td>Jack Reacher</td>
+            <td>Male</td>
+            <td>FEB</td>
+            <td>Manajemen</td>
+            <td><a href="#" class="link-danger"><i class="bi bi-person-dash-fill"></i></a></td>
+        </tr>
+        <tr>
+            <td>105021810002</td>
+            <td>Mery Heather</td>
+            <td>Female</td>
+            <td>FIK</td>
+            <td>Informatika</td>
+            <td><a href="#" class="link-danger"><i class="bi bi-person-dash-fill"></i></a></td>
+        </tr>
+      </table>
+<script>
+    function fungsiSaya() {
+      var x = document.getElementById("target");
+      if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        x.style.display = "none";
+      }
+    }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="hello.js"></script>
+
+  
+<footer class="bg-primary text-white text-center">
+    <p>Made By<br>Janecha Umbase</p>
+  </body>
+</html>
